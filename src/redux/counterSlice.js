@@ -17,6 +17,9 @@ export const counterSlice = createSlice({
     incrementByAmount: (state, action) => {
       state.count += parseInt(action.payload);
     },
+    decrementByAmount: (state, action) => {
+      state.count -= parseInt(action.payload);
+    },
   },
 });
 
