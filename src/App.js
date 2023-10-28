@@ -9,9 +9,9 @@ function App() {
 
   return (
     <>
-      <h1>Count: {count}</h1>
-      <button onClick={() => dispatch(increment())}>increment</button>
-      <button onClick={() => dispatch(decrement())}>decrement</button>
+      <h1>This is the Count: {count}</h1>
+      <button onClick={() => dispatch(increment())}>increment it</button>
+      <button onClick={() => dispatch(decrement())}>decrement it</button>
       <br></br>
       <input onChange={(e) => setAmount(e.target.value)} value={amount}></input>
       <button onClick={() => dispatch(incrementByAmount(amount))}>
