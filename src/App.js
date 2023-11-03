@@ -17,6 +17,7 @@ function App() {
       <button onClick={() => dispatch(incrementByAmount(amount))}>
         increment by amount
       </button>
+      <h2>The current Data is: {new Date()}</h2>
     </>
   );
 }
