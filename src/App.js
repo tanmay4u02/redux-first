@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { increment, decrement, incrementByAmount } from "./redux/counterSlice";
+import { increment, decrement, incrementByAmount, decrementByAmount } from "./redux/counterSlice";
 import { useState } from "react";
 
 function App() {
@@ -16,6 +16,9 @@ function App() {
       <input onChange={(e) => setAmount(e.target.value)} value={amount}></input>
       <button onClick={() => dispatch(incrementByAmount(amount))}>
         increment by amount
+      </button>
+      <button onClick={() => dispatch(decrementByAmount(amount))}>
+        decrement by amount
       </button>
     </>
   );
